@@ -13,7 +13,7 @@ degrees:
 - name: B.S. in Mathematics / Statistics and Data Science
   # icon: fa-graduation-cap
   icon: fa-university
-  timeframe: Sep. 2020 - Mar. 2024
+  timeframe: 2020 - 2024
   institution:
     name: University of California, Santa Barbara
     url: "https://www.ucsb.edu/"
@@ -72,7 +72,7 @@ degrees:
 
 - name: Secondary School
   icon: fa-school
-  timeframe: Sep. 2017 - Jun. 2020
+  timeframe: 2017 - 2020
   institution:
     name: No. 2 High School Attached to East China Normal University
     logo: /images/sections/education/hsefz.jpg
