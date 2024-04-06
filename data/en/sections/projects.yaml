@@ -29,7 +29,7 @@ projects:
   timeline: "Nov. 2023 - Mar. 2024"
   repo: https://github.com/anna-boser/smallholder_irrigation_detection
   summary: The project performs semantic segmentation on delicate, small fields using their satellite imagery. Various pixel-level time series classification models are implemented utilizing time series data from Sentinel satellites. Experiments are conducted to explore the transferability and adaptability of the models' trained weights across different locations and time periods.
-  tags: ["Deep Learning", "Machine Learning", "Time Series", "Computer Vision", "Image Segmentation", "Remote Sensing", "TensorFlow"]
+  tags: ["Deep Learning", "Machine Learning", "Time Series", "Computer Vision", "Image Segmentation", "Remote Sensing", "TensorFlow","Python"]
 
 - name: Few-shot Instance Segmentation for Remote Sensing
   logo: /images/sections/projects/STC.png
@@ -37,14 +37,48 @@ projects:
   timeline: "Jun. 2023 - Oct. 2023"
   # repo: https://nips.cc/virtual/2023/76884 # If your project is a public repo on GitHub, then provide this link. it will show star count.
   url: "https://nips.cc/virtual/2023/76884"  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
-  summary: The paper introduce a novel, data-efficient workflow to address data scarcity challenges in remote sensing. The model is evaluated on the VHR-10 dataset and outperform traditional models like YOLOv8 with small dataset. Results are presented at NeurIPS 2023 CCAI workshop.
-  tags: ["Deep Learning", "Machine Learning", "Computer Vision", "Image Segmentation", "Remote Sensing", "Python"]
+  summary: The paper introduces a novel, data-efficient workflow to address data scarcity challenges in remote sensing. The model is evaluated on the VHR-10 dataset and outperforms traditional models like YOLOv8 with small dataset. Results are presented at NeurIPS 2023 CCAI workshop.
+  tags: ["Deep Learning", "Machine Learning", "Computer Vision", "Image Segmentation", "Remote Sensing", "Pytorch", "Python"]
 
 - name: Time Series Forecasting of U.S. Candy Production
   logo: /images/sections/projects/Candy.png
   role: Time Series Course Project
   timeline: "Sep. 2023 - Nov. 2023"
-  summary: The project focuses on forecasting the candy production in the U.S. based on the time series data over the past 45 years. Techniques such as Box-Cox transformation and differencing are applied to achieve stationarity and the optimal SARIMA model are identified using ACF/PACF analysis and Maximum Likelihood Estimation. The model are further validated through comprehensive diagnostic tests and spectral analysis.
+  repo: https://github.com/yang-i-hu/TS_US_Candy/
+  summary: The project focuses on forecasting the candy production in the U.S. based on the time series data over the past 45 years. Techniques such as Box-Cox transformation and differencing are applied to achieve stationarity, and the optimal SARIMA model is identified using ACF/PACF analysis and Maximum Likelihood Estimation. The model are further validated through comprehensive diagnostic tests and spectral analysis.
   tags: [ "Time Series", "Statistical Modeling", "R"]
+
+- name: Digitizing Handwritten Data with OCR
+  timeline: "Oct. 2023 - Nov. 2023"
+  summary: Developed an automated workflow to scrape and process PDFs from a government website. Employed template matching and a custom-trained TrOCR model to extract handwritten data
+  tags: [ "Deep learning", "Computer Vision", "Python"]
+
+- name: Efficient Visual Attention Design for Image Super-Resolution
+  logo: /images/sections/projects/evasr.png
+  role: AAAI 2024 submission
+  timeline: "Mar. 2022 - May 2023"
+  repo: https://github.com/yang-i-hu/EvaSR
+  summary: Replicated and analyzed 16 Super-Resolution models to assess key characteristics of success models. Collaboratively designed a CNN-based model that achieved state-of-the-art performance while reducing parameter count by 85% through the innovative use of efficient visual attention mechanisms.
+  tags: [ "Deep learning", "Computer Vision", "Image Super Resolution", "Pytorch","Python"]
+
+- name: Soccer player transfer market value prediction
+  logo: /images/sections/projects/evasr.png
+  role: Machine Learning Course Project
+  timeline: "Sep. 2022 - Jan. 2023"
+  repo: https://github.com/yang-i-hu/TMP
+  summary: The project focuses on predicting the market value of soccer players from the top 5 leagues in the transfer market based on their match performance statistics. Eight machine learning models were tuned, including KNN, Random Forest, and Gradient-boosted Trees. The results of these models are reported along with an Exploratory Data Analysis using R markdown.
+  tags: [ "Machine Learning", "R"]
+
+- name: Exploring SO(3) through the lens of Orbifolds
+  logo: /images/sections/projects/pillowcase.png
+  role: UCSB MATH Directed Reading Program
+  timeline: "Jan. 2023 - Mar. 2023"
+  summary: Conducted an in-depth study on the fundamental groups and covering spaces of three-dimensional Orbifolds. Studies were presented with a poster including orbifold visualizations.
+  tags: [ "Math"]
+
+- name: Differential Geometry Calculator
+  repo: https://github.com/yang-i-hu/Diff_Geo_Calculator/
+  summary: A tiny script that may help deal with the tedious calculations in differential geometry.
+  tags: [ "Math", "Python"]
 
 

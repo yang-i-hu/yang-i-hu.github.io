@@ -2,95 +2,95 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/cn/search/</loc>
+    <loc>http://localhost:62572/cn/search/</loc>
     <lastmod>2010-06-08T08:06:25+06:00</lastmod>
     <priority>0.1</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/search/"
+                href="http://localhost:62572/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://localhost:1313/cn/search/"
+                href="http://localhost:62572/cn/search/"
                 />
   </url><url>
-    <loc>http://localhost:1313/cn/search/</loc>
+    <loc>http://localhost:62572/cn/search/</loc>
     <lastmod>2010-06-08T08:06:25+06:00</lastmod>
     <priority>0.1</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/search/"
+                href="http://localhost:62572/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://localhost:1313/cn/search/"
+                href="http://localhost:62572/cn/search/"
                 />
   </url><url>
-    <loc>http://localhost:1313/cn/notes/</loc>
+    <loc>http://localhost:62572/cn/notes/</loc>
     <lastmod>2010-06-08T08:06:25+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/notes/"
+                href="http://localhost:62572/notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://localhost:1313/cn/notes/"
+                href="http://localhost:62572/cn/notes/"
                 />
   </url><url>
-    <loc>http://localhost:1313/cn/search/</loc>
+    <loc>http://localhost:62572/cn/search/</loc>
     <lastmod>2010-06-08T08:06:25+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/search/"
+                href="http://localhost:62572/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://localhost:1313/cn/search/"
+                href="http://localhost:62572/cn/search/"
                 />
   </url><url>
-    <loc>http://localhost:1313/cn/</loc>
+    <loc>http://localhost:62572/cn/</loc>
     <lastmod>2010-06-08T08:06:25+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="http://localhost:62572/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://localhost:1313/cn/"
+                href="http://localhost:62572/cn/"
                 />
   </url><url>
-    <loc>http://localhost:1313/cn/categories/</loc>
+    <loc>http://localhost:62572/cn/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/categories/"
+                href="http://localhost:62572/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://localhost:1313/cn/categories/"
+                href="http://localhost:62572/cn/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/cn/tags/</loc>
+    <loc>http://localhost:62572/cn/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/"
+                href="http://localhost:62572/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="http://localhost:1313/cn/tags/"
+                href="http://localhost:62572/cn/tags/"
                 />
   </url>
 </urlset>
