@@ -10,95 +10,70 @@ section:
   # hideTitle: true
 
 degrees:
-- name: Ph.D in Quantum Cryptography
-  icon: fa-microscope
-  timeframe: 2016-2020
+- name: B.S. in Mathematics / Statistics and Data Science
+  # icon: fa-graduation-cap
+  icon: fa-university
+  timeframe: Sep. 2020 - Mar. 2024
   institution:
-    name: ABC University of Technology
-    url: "#"
-    logo: /images/sections/education/tech_college.png
+    name: University of California, Santa Barbara
+    url: "https://www.ucsb.edu/"
+    logo: /images/sections/education/UCSB.png
     # Can optionally show a different logo for dark theme
-    # darklogo: /images/sections/education/tech_college.png
-  grade: #(optional)
-    scale: CGPA
-    achieved: 3.6
-    outOf: 4
-  publications: #(optional)
-  - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    url: "#"
-  - title: Fusce eu augue ut odio porttitor pulvinar.
-    url: "#"
-  - title: Nullam vitae orci tincidunt purus viverra pulvinar.
-    url: "#"
-- name: B.Sc. in Computer Science & Engineering
-  icon: fa-graduation-cap
-  timeframe: 2012-2016
-  institution:
-    name: University of XYZ
-    url: "#"
-    logo: /images/sections/education/university.jpg
-    # Can optionally show a different logo for dark theme
-    # darklogo: /images/sections/education/university.jpg
-  grade: #(optional)
-    scale: CGPA
-    achieved: 3.5
-    outOf: 4
+    darkLogo: /images/sections/education/UCSB-gold.png
+  # grade: #(optional)
+  #   scale: CGPA
+  #   achieved: 3.5
+  #   outOf: 4
   takenCourses: #(optional)
     # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
-    showGrades: true
+    showGrades: false
     collapseAfter: 3
     courses:
-    - name: Data Structures and Algorithm
-      achieved: 3.75
-      outOf: 4
-    - name: Network Security
-      achieved: 3.80
-      outOf: 4
-    - name: Operating System
-      achieved: 3.5
-      outOf: 4
-    - name: Artificial Intelligent
-      achieved: 3.75
-      outOf: 4
-  publications: #(optional)
-  - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    url: "#"
-  - title: Fusce eu augue ut odio porttitor pulvinar.
-    url: "#"
+    - name: CS | Data Structures and Algorithms
+    - name: CS | Algorithms Engineering
+    - name: CS | Deep Learning
+
+    - name: DS | Statistical Machine Learning
+    - name: DS | Statistical Data Science
+    - name: DS | Big Data Analytics
+
+    - name: STAT | Probability and Statistics A-B-C
+    - name: STAT | Time Series
+    - name: STAT | Regression Analysis
+    - name: STAT | Applied Stochastic Processes
+    - name: STAT | Design and Analysis of Experiments
+    - name: STAT | Design and Analysis of Experiments
+
+    - name: MATH | Linear Algebra A-B
+    - name: MATH | Real Analysis A-B
+    - name: MATH | Differential Geometry
+    - name: MATH | Non-euclidean Geometry
+    - name: MATH | Abstract Algebra A-B-C
+    - name: MATH | Number Theory
+
+    - name: FINANCE | Financial Mathematics
+    - name: FINANCE | Mathematics of Fixed Income Markets
+
+
+  # publications: #(optional)
+  # - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  #   url: "#"
+
   extracurricularActivities: #(optional)
-  - In vitae facilisis est, eget porta sem.
-  - Vestibulum consectetur lorem justo, at laoreet lorem feugiat et.
-  - Duis sed massa feugiat, ornare justo et, aliquam est.
-  - Pellentesque ut fringilla magna.
+  - Chinese Students and Scholars Association (CSSA) Lead event planner
+  - Intramural soccer player
+
   custonSections: #(optional)
-    - name: Thesis
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - name: Supervisor
-      content: Fusce eu augue ut odio porttitor pulvinar.
-- name: Higher Secondary School Certificate
-  icon: fa-university
-  timeframe: 2010-2012
-  institution:
-    name: MST College of Science
-    url: "#"
-    logo: /images/sections/education/science_college.png
-    # Can optionally show a different logo for dark theme
-    # darklogo: /images/sections/education/science_college.png
-  grade: #(optional)
-    scale: GPA
-    achieved: 5
-    outOf: 5
-  extracurricularActivities: #(optional)
-  - In vitae facilisis est, eget porta sem.
-  - Vestibulum consectetur lorem justo, at laoreet lorem feugiat et.
-  - Duis sed massa feugiat, ornare justo et, aliquam est.
-  - Pellentesque ut fringilla magna.
-- name: Secondary School Certificate
+    - name: Fellowship
+      content: Schmidt Family Foundation Research Mentorship Award
+    # - name: Supervisor
+    #   content: Fusce eu augue ut odio porttitor pulvinar.
+
+
+- name: Secondary School
   icon: fa-school
-  timeframe: 2005-2010
+  timeframe: Sep. 2017 - Jun. 2020
   institution:
-    name: JK School of Science
-  grade: #(optional)
-    scale: GPA
-    achieved: 4.5
-    outOf: 5
+    name: No. 2 High School Attached to East China Normal University
+    logo: /images/sections/education/hsefz.jpg
+    darkLogo: /images/sections/education/hsefz-white.png

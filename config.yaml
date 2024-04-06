@@ -23,9 +23,9 @@ languages:
   en:
     languageName: English
     weight: 1
-  bn:
-    languageName: বাংলা
-    weight: 3
+  cn:
+    languageName: 中文
+    weight: 2
 
 # Force a locale to be use, really useful to develop the application ! Should be commented in production, the "weight" should rocks.
 # DefaultContentLanguage: bn
@@ -61,7 +61,7 @@ params:
   logo:
     main: /images/site/main-logo.png
     inverted: /images/site/inverted-logo.png
-    favicon: /images/site/favicon.png
+    favicon: /images/site/favicon.jpg
 
   # GitHub repo of your site
   gitRepo: https://github.com/yang-i-hu/yang-i-hu.github.io
@@ -85,7 +85,7 @@ params:
 
     # Enable and configure blog posts
     blog:
-      enable: true
+      enable: false
       showAuthor: true # shows the author of post (defaults true)
       # Share post on different social media
       shareButtons:
@@ -102,7 +102,7 @@ params:
 
     # Enable & configure "Notes" features
     notes:
-      enable: true
+      enable: false
 
     # Enable comment feature. There, should be only one of them.
     comment:
@@ -253,7 +253,7 @@ params:
     
         # Enable reading time support in post cards and in post pages
     readingTime:
-      enable: false
+      enable: true
     
     # Number of posts to show to each page. Default is "12"
     pagination:
@@ -276,7 +276,7 @@ params:
       enable: true
     # Show/hide credentials section in the footer. Default is "true".
     credentials:
-      enable: true
+      enable: false
 
     # Show/hide newsletter section in the footer. Default is "true".
     # Currently, it supports "mailchimp".
@@ -287,4 +287,4 @@ params:
 
     # Show/hide disclaimer notice in the footer. Default is "false".
     disclaimer:
-      enable: true
+      enable: false

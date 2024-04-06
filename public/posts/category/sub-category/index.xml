@@ -17,6 +17,15 @@ Category, sub-category nesting in the sidebar. Hero image and other images are i
 &amp;mdash; San Diego Zoo Wildlife Alliance (@sandiegozoo) October 26, 2021 YouTube Video Sample Vimeo Video Sample </description>
     </item>
     
+    <item>
+      <title>Sub-Category</title>
+      <link>http://localhost:1313/posts/category/sub-category/_index.bn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/category/sub-category/_index.bn/</guid>
+      <description></description>
+    </item>
+    
     
   </channel>
 </rss>

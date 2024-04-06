@@ -14,6 +14,15 @@
       <description>Variable NAME=&amp;#34;John&amp;#34; echo $NAME echo &amp;#34;$NAME&amp;#34; echo &amp;#34;${NAME} Condition if [[ -z &amp;#34;$string&amp;#34; ]]; then echo &amp;#34;String is empty&amp;#34; elif [[ -n &amp;#34;$string&amp;#34; ]]; then echo &amp;#34;String is not empty&amp;#34; fi </description>
     </item>
     
+    <item>
+      <title>ব্যাশের নোট সমূহ</title>
+      <link>http://localhost:1313/notes/bash/_index.bn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/notes/bash/_index.bn/</guid>
+      <description>Bash Notes </description>
+    </item>
+    
     
   </channel>
 </rss>
