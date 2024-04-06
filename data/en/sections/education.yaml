@@ -61,6 +61,8 @@ degrees:
 
   extracurricularActivities: #(optional)
   - Chinese Students and Scholars Association (CSSA) Lead event planner
+  - Data Science Club
+  - Snow Club
   - Intramural soccer player
 
   custonSections: #(optional)
