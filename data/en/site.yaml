@@ -22,8 +22,8 @@ description: Portfolio and personal blog of Yang Hu.
 
 # Specify OpenGraph Headers
 openGraph:
-  title: Yang's Blog
+  title: Yang's Site
   type: website
-  description: Portfolio and personal blog of Yang Hu.
+  description: Personal Website of Yang Hu.
   image: images/author/yang.png
   url: https://yang-i-hu.github.io/
