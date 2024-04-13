@@ -25,7 +25,7 @@ skills:
 
 - name: SQL
   logo: /images/sections/skills/sql.png
-  summary: "Proficient in SQL for database management and data manipulation. Experienced in data analysis with SQL and integration with other programming environments."
+  summary: "Proficient in SQL for database management, data manipulation, and integration with other programming environments."
 
 - name: Cloud Computing
   logo: /images/sections/skills/cloud.png
