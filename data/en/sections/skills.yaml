@@ -15,13 +15,13 @@ skills:
   logo: /images/sections/skills/python.png
   summary: "Using as the main language fluently for research and projects. Familiar with Pytorch, Tensorflow, Scikit-learn, Spark, Pandas, Numpy/Sci-py, Seaborn, etc."
 
-- name: R
-  logo: /images/sections/skills/R.png
-  summary: "Using fluently for EDA, statistical modeling and time series analysis. Familiar with car, tidyverse, caret, forecast, etc."
-
 - name: C++
   logo: /images/sections/skills/c++.png
   summary: "Experienced with basic C++ programming. Used for contest programming and problem solving."
+
+- name: R
+  logo: /images/sections/skills/R.png
+  summary: "Using fluently for EDA, statistical modeling and time series analysis. Familiar with car, tidyverse, caret, forecast, etc."
 
 - name: SQL
   logo: /images/sections/skills/sql.png

@@ -6,7 +6,7 @@ greeting: "Hi, I am"
 image: "images/author/transparent.png"
 # give your some contact information. they will be used in the footer
 contactInfo:
-  email: "yanghu@ucsb.edu"
+  email: "yang.h@nyu.edu"
   phone: "+1 805-637-9661"
   github: yang-i-hu
   linkedin: yang-hu-564998210

@@ -11,6 +11,26 @@ section:
 # Your experiences
 experiences:
 - company:
+    name: Unity
+    url: "https://unity.com/"
+    location: Shanghai, China
+    logo: /images/sections/experiences/U_Logo_Small_Black_RGB_1C.png
+    darklogo: /images/sections/experiences/U_Logo_Small_White_RGB_1C.png
+    # company overview
+    # overview: "The world’s leading platform for creating and operating interactive, real-time 3D (RT3D) content. "
+  
+  positions:
+  - designation: R&D Sofeware Engineering Intern
+    start: May. 2024
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    end: Aug. 2024
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Scaled the RAG database for Unity’s AI assistant, Muse Chat, by developing a workflow that systematically gathers inputs from various Unity forums and enhances data quality with an LLM pipeline.
+    - Created MuseBench, a system using LLM-as-a-judge along with a benchmark dataset to evaluate the AI agents, achieving a 95% reduction in time required for assessment processes while minimizing human labor.
+    - Developed a pipeline with a locally deployed LLM to extract the key error messages from Unity Cloud Build log files that typically exceed 100k lines.
+
+- company:
     name: The Waves Lab at UCSB
     url: "https://caylor.eri.ucsb.edu/"
     location: Santa Barbara, California

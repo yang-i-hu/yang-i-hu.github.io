@@ -6,7 +6,7 @@ greeting: "你好! 我是"
 image: "images/author/yang.png"
 # give your some contact information. they will be used in the footer
 contactInfo:
-  邮箱: "yanghu@ucsb.edu"
+  邮箱: "yang.h@nyu.edu"
   电话: "+1 805-637-9661"
 
 # some summary about what you do

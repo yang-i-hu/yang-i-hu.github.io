@@ -10,6 +10,45 @@ section:
   # hideTitle: true
 
 degrees:
+- name: M.S. in Computer Science
+  # icon: fa-graduation-cap
+  icon: fa-university
+  timeframe: 2024 - 2026
+  institution:
+    name: New York University
+    url: "https://engineering.nyu.edu/academics/departments/computer-science-and-engineering"
+    logo: /images/sections/education/NYU.png
+    # Can optionally show a different logo for dark theme
+    darkLogo: /images/sections/education/NYU_White.png
+  # grade: #(optional)
+  #   scale: CGPA
+  #   achieved: 3.5
+  #   outOf: 4
+  takenCourses: #(optional)
+    # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
+    showGrades: false
+    collapseAfter: 3
+    courses:
+    - name: Design and Analysis of Algorithms
+    - name: Web Search Engines
+    - name: Computer Networking
+
+  # publications: #(optional)
+  # - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  #   url: "#"
+
+  extracurricularActivities: #(optional)
+  - Chinese Students and Scholars Association (CSSA) Lead event planner
+  - Data Science Club
+  - Snow Club
+  - Intramural soccer player
+
+  custonSections: #(optional)
+    - name: Fellowship
+      content: Schmidt Family Foundation Research Mentorship Award
+    # - name: Supervisor
+    #   content: Fusce eu augue ut odio porttitor pulvinar.
+
 - name: B.S. in Mathematics / Statistics and Data Science
   # icon: fa-graduation-cap
   icon: fa-university

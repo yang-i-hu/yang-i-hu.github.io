@@ -2,7 +2,9 @@
  "compilerOptions": {
   "baseUrl": ".",
   "paths": {
-   "*": null
+   "*": [
+    "..\\..\\..\\Users\\yangh\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\hugo-toha\\toha\\v4@v4.4.0\\assets\\*"
+   ]
   }
  }
 }
