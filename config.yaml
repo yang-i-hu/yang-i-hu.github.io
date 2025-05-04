@@ -61,7 +61,7 @@ params:
   logo:
     main: /images/site/main-logo.png
     inverted: /images/site/inverted-logo.png
-    favicon: /images/site/favicon.jpg
+    favicon: /images/site/yh_favicon.png
 
   # GitHub repo of your site
   gitRepo: https://github.com/yang-i-hu/yang-i-hu.github.io

@@ -15,4 +15,7 @@ hugo server -w
 ```
 localhost:1313
 
+## Customization
+- Layout: https://toha-guides.netlify.app/posts/customizing/customize-layout/
+
 

@@ -8,29 +8,38 @@ section:
   # Can optionally hide the title in sections
   # hideTitle: true
 
-# Your Skills.
-# Give a summary of you each skill in the summary section.
 skills:
+
 - name: Python
   logo: /images/sections/skills/python.png
-  summary: "Using as the main language fluently for research and projects. Familiar with Pytorch, Tensorflow, Scikit-learn, Spark, Pandas, Numpy/Sci-py, Seaborn, etc."
+  summary: "Primary language for research and production systems. Proficient with PyTorch, Scikit-learn, Pandas, NumPy/SciPy, and Spark for distributed ML; build robust web back-ends and REST APIs with Django."
 
 - name: C++
   logo: /images/sections/skills/c++.png
-  summary: "Experienced with basic C++ programming. Used for contest programming and problem solving."
+  summary: "Modern C++17/20 for high-performance, low-latency systems. Comfortable with multithreading, memory management, STL, and competitive-programming–style algorithm design."
 
 - name: R
   logo: /images/sections/skills/R.png
-  summary: "Using fluently for EDA, statistical modeling and time series analysis. Familiar with car, tidyverse, caret, forecast, etc."
+  summary: "Fluent in exploratory data analysis, statistical modeling, and time-series forecasting using the tidyverse, caret, forecast, and Shiny for interactive dashboards."
 
 - name: SQL
   logo: /images/sections/skills/sql.png
-  summary: "Proficient in SQL for database management, data manipulation, and integration with other programming environments."
+  summary: "Advanced SQL across PostgreSQL and MySQL. Design and normalize relational schemas, create indexes, tune queries, and leverage window functions/CTEs for both OLTP and analytical workloads."
 
-- name: Cloud Computing
+- name: Docker & Kubernetes
+  logo: /images/sections/skills/kubernetes.png
+  summary: "Containerized microservices and ML workloads with Docker/Compose; orchestrated, auto-scaled, and monitored clusters in Kubernetes (GKE/EKS)."
+
+- name: DevOps & CI/CD
+  logo: /images/sections/skills/travis.png
+  summary: "Automated build–test–deploy pipelines using GitHub Actions and Travis CI; integrated unit/integration testing, security scanning, and blue-green rollouts."
+
+- name: Cloud & Serverless
   logo: /images/sections/skills/cloud.png
   summary: "Worked with Google Cloud Platform for big data analytics."
 
-- name: Git
+- name: Git & Version Control
   logo: /images/sections/skills/git.png
-  summary: "Experienced with git-based development. "
+  summary: "Daily Git user—branching strategies, code reviews, GitHub Actions, and release automation in agile teams."
+
+

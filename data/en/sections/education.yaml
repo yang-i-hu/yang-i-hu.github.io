@@ -32,22 +32,18 @@ degrees:
     - name: Design and Analysis of Algorithms
     - name: Web Search Engines
     - name: Computer Networking
+    - name: Operating Systems
+    - name: Principles of Database Systems
+    - name: Software Engineering
 
   # publications: #(optional)
   # - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   #   url: "#"
 
   extracurricularActivities: #(optional)
-  - Chinese Students and Scholars Association (CSSA) Lead event planner
-  - Data Science Club
-  - Snow Club
-  - Intramural soccer player
 
   custonSections: #(optional)
-    - name: Fellowship
-      content: Schmidt Family Foundation Research Mentorship Award
-    # - name: Supervisor
-    #   content: Fusce eu augue ut odio porttitor pulvinar.
+
 
 - name: B.S. in Mathematics / Statistics and Data Science
   # icon: fa-graduation-cap
@@ -81,7 +77,6 @@ degrees:
     - name: STAT | Regression Analysis
     - name: STAT | Applied Stochastic Processes
     - name: STAT | Design and Analysis of Experiments
-    - name: STAT | Design and Analysis of Experiments
 
     - name: MATH | Linear Algebra A-B
     - name: MATH | Real Analysis A-B
@@ -94,9 +89,11 @@ degrees:
     - name: FINANCE | Mathematics of Fixed Income Markets
 
 
-  # publications: #(optional)
-  # - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  #   url: "#"
+  publications: #(optional)
+    - title: "Compacter: A Lightweight Transformer for Image Restoration"
+      url: "https://openreview.net/pdf?id=gvrDYlQXxw"
+    - title: "Segment-then-Classify: Few-shot instance segmentation for environmental remote sensing"
+      url: "https://www.climatechange.ai/papers/neurips2023/53"
 
   extracurricularActivities: #(optional)
   - Chinese Students and Scholars Association (CSSA) Lead event planner
