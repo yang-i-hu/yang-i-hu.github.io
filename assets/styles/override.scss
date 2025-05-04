@@ -1,0 +1,46 @@
+/* -------------  Collapsible project summaries  ------------------- */
+.collapse-summary .summary-text {
+    position: relative;
+    line-height: 1.5;
+    overflow: hidden;
+    transition: max-height .3s ease;
+  }
+  
+  /* CLAMPED state (Toha already adds .collapsed in the markup) */
+  .collapse-summary .summary-text.collapsed {
+    max-height: calc(1.5em * 5);      /* exactly 5 lines                */
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+  }
+  
+  /* EXPANDED state */
+  .collapse-summary .summary-text:not(.collapsed) {
+    max-height: 500px;                 /* tall enough for any summary    */
+  }
+  
+  /* Fading mask at the bottom while clamped */
+  .collapse-summary .summary-text.collapsed::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 1.5em;                     /* 1 line = 1.5 em                */
+    background: linear-gradient(transparent, white);
+    pointer-events: none;
+  }
+  
+  /* Dark-mode override (Toha sets [data-dark-mode]) */
+  [data-dark-mode] .collapse-summary .summary-text.collapsed::after {
+    background: linear-gradient(transparent, var(--dark-context-bg));
+  }
+  
+  /* Button */
+  .toggle-summary {
+    padding: 0;
+    font-size: .9em;
+    color: #248aaa;
+    margin-top: -.5em;
+    cursor: pointer;
+  }
+  .toggle-summary:hover { text-decoration: underline; }
+  

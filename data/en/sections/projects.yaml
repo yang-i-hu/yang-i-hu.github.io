@@ -14,15 +14,28 @@ buttons:
   filter: "all"
 - name: Machine Learning
   filter: "Machine Learning"
-- name: Deep Learning
-  filter: "Deep Learning"
-- name: Time Series
-  filter: "Time Series"
+- name: Computer Vision
+  filter: "Computer Vision"
+- name: Data Science
+  filter: "Data Science"
 - name: Math
   filter: "Math"
 
 # your projects
 projects:
+
+- name: VocationalNYC
+  url: "http://vocationalnyc-env.eba-uurzafst.us-east-1.elasticbeanstalk.com/"
+  repo: https://github.com/gcivil-nyu-org/team1-wed-spring25
+  timeline: "Jan. 2025 - May 2025"
+  summary: "A full-stack platform that helps connect NYC residents with vocational programmes: Django-powered backend (PostgreSQL, WebSockets), Google Maps API for geo-search, AWS Elastic Beanstalk + Nginx deployment, and a Travis-driven CI/CD pipeline."
+  tags: ["Web Development", "Django", "PostgreSQL", "AWS", "DevOps", "JavaScript", "Python"]
+
+- name: Information Retrieval System & Retrieval-Augmented Generation
+  timeline: "Sep. 2024 – Dec. 2024"
+  summary: Built a search engine from scratch on MS MARCO—block-compressed inverted index, DAAT BM25 ranking—then refactored the pipeline with HNSW and advanced reordering to lift F1 by 25 % and systematically probe “lost-in-the-middle” bias in RAG workflows.
+  tags: ["Deep learning", "Machine Learning", "Information Retrieval", "RAG", "Search Engine", "LLM", "Python"]
+
 - name: Semantic Segmentation by Pixel-level Time Series Classification
   # logo: /images/sections/projects/STC.png
   # role: First author
@@ -46,28 +59,28 @@ projects:
   timeline: "Sep. 2023 - Nov. 2023"
   repo: https://github.com/yang-i-hu/TS_US_Candy/
   summary: The project focuses on forecasting the candy production in the U.S. based on the time series data over the past 45 years. Techniques such as Box-Cox transformation and differencing are applied to achieve stationarity, and the optimal SARIMA model is identified using ACF/PACF analysis and Maximum Likelihood Estimation. The model are further validated through comprehensive diagnostic tests and spectral analysis.
-  tags: [ "Time Series", "Statistical Modeling", "R"]
-
-- name: Digitizing Handwritten Data with OCR
-  timeline: "Oct. 2023 - Nov. 2023"
-  summary: Developed an automated workflow to scrape and process PDFs from a government website. Employed template matching and a custom-trained TrOCR model to extract handwritten data
-  tags: [ "Deep learning", "Computer Vision", "Python"]
-
+  tags: [ "Data Science", "Time Series", "Statistical Modeling", "R"]
+  
 - name: Efficient Visual Attention Design for Image Super-Resolution
   logo: /images/sections/projects/evasr.png
   role: AAAI 2024 submission
   timeline: "Mar. 2022 - May 2023"
   repo: https://github.com/yang-i-hu/EvaSR
-  summary: Replicated and analyzed 16 Super-Resolution models to assess key characteristics of success models. Collaboratively designed a CNN-based model that achieved state-of-the-art performance while reducing parameter count by 85% through the innovative use of efficient visual attention mechanisms.
-  tags: [ "Deep learning", "Computer Vision", "Image Super Resolution", "Pytorch","Python"]
+  summary: Replicated 16 SOTA SR models, discovered key architectural bottlenecks, and co-created EvaSR—an attention-augmented CNN that matches SOTA PSNR while slashing parameters by 85 % and FLOPs by 70 %.
+  tags: [ "Deep learning", "Machine Learning", "Computer Vision", "Image Super Resolution", "Pytorch","Python"]
+
+- name: Digitizing Handwritten Data with OCR
+  timeline: "Oct. 2023 - Nov. 2023"
+  summary: Automated the collection and parsing of thousands of government PDFs, then fine-tuned a TrOCR-base model with custom template-matching to hit 95 %+ character accuracy on challenging handwritten forms—reducing manual data entry time from hours to seconds.
+  tags: [ "Deep learning","Machine Learning", "Computer Vision", "Python"]
 
 - name: Soccer player transfer market value prediction
   logo: /images/sections/projects/evasr.png
   role: Machine Learning Course Project
   timeline: "Sep. 2022 - Jan. 2023"
   repo: https://github.com/yang-i-hu/TMP
-  summary: The project focuses on predicting the market value of soccer players from the top 5 leagues in the transfer market based on their match performance statistics. Eight machine learning models were tuned, including KNN, Random Forest, and Gradient-boosted Trees. The results of these models are reported along with an Exploratory Data Analysis using R markdown.
-  tags: [ "Machine Learning", "R"]
+  summary: Engineered a rich feature set from top-5-league match stats and benchmarked eight machine learning models including KNN, Random Forest, and Gradient-boosted Trees. The results are reported along with an Exploratory Data Analysis using R markdown.
+  tags: [ "Data Science", "Machine Learning", "R"]
 
 - name: Exploring SO(3) through the lens of Orbifolds
   logo: /images/sections/projects/pillowcase.png
@@ -78,7 +91,6 @@ projects:
 
 - name: Differential Geometry Calculator
   repo: https://github.com/yang-i-hu/Diff_Geo_Calculator/
-  summary: A tiny script that may help deal with the tedious calculations in differential geometry.
+  summary: Authored a lightweight Python tool that symbolically computes curvature, torsion, and Christoffel symbols—turning pages of manual tensor algebra into one-line scripts.
   tags: [ "Math", "Python"]
-
 

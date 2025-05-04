@@ -4,7 +4,7 @@
 >
   <div class="card mt-1">
     <div class="card">
-      <a href="{{ if .repo }}{{ .repo }}{{ else if .url }}{{ .url }}{{ else }}javascript:void(0){{ end }}" {{ if or .repo .url }}target="_blank" rel="noopener"{{ end }}>
+      <a href="{{ if .url }}{{ .url }}{{ else if .repo }}{{ .repo }}{{ else }}javascript:void(0){{ end }}" {{ if or .repo .url }}target="_blank" rel="noopener"{{ end }}>
         {{ if .image }}
         <div class="card-head">
           {{ $imageImage:= resources.Get .image}}
@@ -50,7 +50,12 @@
         </div>
       </a>
       <div class="card-body text-justify pt-1 pb-1">
-        <p>{{ .summary | markdownify }}</p>
+        <div class="collapse-summary">
+          <p class="card-text summary-text collapsed">{{ .summary | markdownify }}</p>
+          <button class="btn btn-link btn-sm toggle-summary" type="button" style="display: none;">
+            Read More
+          </button>
+        </div>
         <!-- Display project card technology tags -->
         <div class="project-card-footer">
           {{ if .tags }}

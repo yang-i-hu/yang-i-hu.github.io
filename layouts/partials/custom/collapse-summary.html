@@ -1,0 +1,3 @@
+{{- $opts := dict "target" "es2019" -}}
+{{- $src  := resources.Get "scripts/collapse-summary.js" | js.Build $opts | resources.Minify -}}
+<script defer src="{{ $src.RelPermalink }}" integrity="{{ $src.Data.Integrity }}"></script>
