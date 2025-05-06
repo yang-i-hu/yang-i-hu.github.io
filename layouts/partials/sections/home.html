@@ -75,32 +75,44 @@
 
 <div class="container-fluid home" id="home">
   <style>
-    /* 0 to 299 */
+    /* Base styles for all screens */
     #homePageBackgroundImageDivStyled {
-      background-image: url('{{ $tiny.RelPermalink }}');
+      background-image: image-set(
+          url('{{ $tiny.RelPermalink }}') 1x,
+          url('{{ $small.RelPermalink }}') 2x,
+          url('{{ $medium.RelPermalink }}') 3x);
     }
-    /* 300 to X */
-    @media (min-width: 500px) and (max-width: 800px) { /* or 301 if you want really the same as previously.  */
-      #homePageBackgroundImageDivStyled {   
-          background-image: url('{{ $small.RelPermalink }}');
-        }
+    
+    /* Medium screens */
+    @media (min-width: 500px) and (max-width: 800px) {
+      #homePageBackgroundImageDivStyled {
+        background-image: image-set(
+            url('{{ $small.RelPermalink }}') 1x,
+            url('{{ $medium.RelPermalink }}') 2x,
+            url('{{ $large.RelPermalink }}') 3x);
+      }
     }
-    @media (min-width: 801px) and (max-width: 1200px) { /* or 301 if you want really the same as previously.  */
-      #homePageBackgroundImageDivStyled {   
-          background-image: url('{{ $medium.RelPermalink }}');
-        }
+    
+    /* Larger screens */
+    @media (min-width: 801px) and (max-width: 1200px) {
+      #homePageBackgroundImageDivStyled {
+        background-image: image-set(
+            url('{{ $medium.RelPermalink }}') 1x,
+            url('{{ $large.RelPermalink }}') 2x,
+            url('{{ $src.RelPermalink }}') 3x);
+      }
     }
-    @media (min-width: 1201px) and (max-width: 1500px) { /* or 301 if you want really the same as previously.  */
-      #homePageBackgroundImageDivStyled {   
-          background-image: url('{{ $large.RelPermalink }}');
-        }
+    
+    /* Largest screens */
+    @media (min-width: 1201px) {
+      #homePageBackgroundImageDivStyled {
+        background-image: image-set(
+            url('{{ $large.RelPermalink }}') 1x,
+            url('{{ $src.RelPermalink }}') 2x,
+            url('{{ $src.RelPermalink }}') 3x);
+      }
     }
-    @media (min-width: 1501px) { /* or 301 if you want really the same as previously.  */
-      #homePageBackgroundImageDivStyled {   
-          background-image: url('{{ $src.RelPermalink }}');
-        }
-    }
-    </style>
+  </style>
     <span class="on-the-fly-behavior"></span>
   <div
     id="homePageBackgroundImageDivStyled"

@@ -12,9 +12,9 @@
     margin: 0;
     background-attachment: fixed;
     background-position: center;
-    transform: scale(1.1);
+    // Remove transform scale that causes blur
+    // transform: scale(1.1); 
     filter: saturate(1.1);
-    // filter: blur(3px);
     background-size: cover;
   }
 
@@ -32,7 +32,11 @@
   */
   @supports (-webkit-touch-callout: none) {
     .background {
+      // On iOS devices, use scroll instead of fixed
       background-attachment: scroll;
+      // Ensure background covers the full area
+      min-height: 100vh;
+      background-size: cover;
     }
   }
 
