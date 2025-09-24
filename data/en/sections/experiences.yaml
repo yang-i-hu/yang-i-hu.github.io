@@ -11,6 +11,26 @@ section:
 # Your experiences
 experiences:
 - company:
+    name: Abama Private Fund Investment Management Co., Ltd.
+    location: Shanghai, China
+    logo: /images/sections/experiences/abama.png
+    # darklogo: /images/sections/experiences/
+    # company overview
+    # overview: "The world’s leading platform for creating and operating interactive, real-time 3D (RT3D) content. "
+  
+  positions:
+  - designation: Quantitative Research Intern
+    start: July. 2025
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    end: Aug. 2025
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Designed a parallelized data pipeline to transform raw event-level financial data into 300+ engineered featuresto feed high-frequency trading ML models, cutting data preparation from 8 h to 15 min.
+    - Delivered a live-updating factor store database powering large-scale model training and backtests; increased experiment throughput by ∼ 10× and enabled apples-to-apples model comparison during strategy reviews.
+    - Fine-tuned Transformers for trading signal prediction, improving annualized return by 3% in backtests.
+    - Built an automated feature-discovery framework that iteratively surfaces noise-robust, signal-strengthening factors, accelerating model iteration and reducing manual screening.
+
+- company:
     name: Unity
     url: "https://unity.com/"
     location: Shanghai, China
@@ -20,15 +40,15 @@ experiences:
     # overview: "The world’s leading platform for creating and operating interactive, real-time 3D (RT3D) content. "
   
   positions:
-  - designation: R&D Sofeware Engineering Intern
+  - designation: R&D Software Engineering Intern
     start: May. 2024
     # don't provide end date if you are currently working there. It will be replaced by "Present"
     end: Aug. 2024
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Scaled the RAG database for Unity’s AI assistant, Muse Chat, by developing a workflow that systematically gathers inputs from various Unity forums and enhances data quality with an LLM pipeline.
-    - Created MuseBench, a system using LLM-as-a-judge along with a benchmark dataset to evaluate the AI agents, achieving a 95% reduction in time required for assessment processes while minimizing human labor.
-    - Developed a pipeline with a locally deployed LLM to extract the key error messages from Unity Cloud Build log files that typically exceed 100k lines.
+    - Scaled the RAG knowledge base for Unity’s AI assistant via community and forum ingestion and LLM-based quality filtering; expanded answer coverage for Editor/API issues by ∼ 10×, improving first-response resolution.
+    - Built MuseBench, an evaluation platform that pairs an LLM-as-a-judge with a curated benchmark of Q&A pairs, enabling consistent scoring of RAG results across different model versions and cutting evaluation time by 95%.
+    - Deployed a local-LLM pipeline to parse 100k+-line Unity Cloud Build logs and extract root-cause signals; reduced triage from hours to minutes and accelerated time-to-fix for recurring build failures.
 
 - company:
     name: The Waves Lab at UCSB
@@ -66,15 +86,16 @@ experiences:
     overview: "Advisor: [Prof. Ding-jiang Huang](https://openreview.net/profile?id=~Dingjiang_Huang1)"
 
   positions:
-  - designation: Undergraduate Research Assistant
-    start: Aug. 2022
-    end: Jun. 2023
-    responsibilities:
-    - Trained and fine-tuned various CNN and transformer models for Image Super-Resolution
-    - Led a comprehensive ablation study to evaluate and refine the proposed architecture
-
-  - designation: Summer Intern
-    start: Jun. 2022
-    end: Aug. 2022
-    responsibilities:
-    - Conducted literature reviews on Image Super-Resolution deep learning models.
+    - designation: Undergraduate Research Assistant
+      start: Aug. 2022
+      end: Jun. 2023
+      responsibilities:
+      - "Co-authored the ACM MM '24 paper :'[Compacter: A Lightweight Transformer for Image Restoration](https://openreview.net/pdf?id=gvrDYlQXxw)', achieving state-of-the-art PSNR performance across different Image Restoration tasks with ~ 50% - 65% fewer parameters."
+      - Co-designed Compact Adaptive Self-Attention, enabling omnidirectional spatial–channel information flow through cross-modulation of global context to strengthen long-range dependencies while preserving local detail.
+      - Proposed a Dual Selective Gated Module that dynamically injects global context into each pixel for contextadaptive aggregation, amplifying informative features and suppressing noise.
+      - Built the PyTorch training/benchmarking pipeline and ran ablation experiments, enabling reproducible results and efficient comparison to baselines.
+    - designation: Summer Intern
+      start: Jun. 2022
+      end: Aug. 2022
+      responsibilities:
+      - Conducted literature reviews on Image Super-Resolution deep learning models.

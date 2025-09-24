@@ -20,10 +20,10 @@ degrees:
     logo: /images/sections/education/NYU.png
     # Can optionally show a different logo for dark theme
     darkLogo: /images/sections/education/NYU_White.png
-  # grade: #(optional)
-  #   scale: CGPA
-  #   achieved: 3.5
-  #   outOf: 4
+  grade: #(optional)
+    scale: GPA
+    achieved: 3.9
+    outOf: 4
   takenCourses: #(optional)
     # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
     showGrades: false
@@ -35,6 +35,9 @@ degrees:
     - name: Operating Systems
     - name: Principles of Database Systems
     - name: Software Engineering
+    - name: Blockchain and Distributed Ledger Technology
+    - name: Big Data
+    - name: Network Security
 
   # publications: #(optional)
   # - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
