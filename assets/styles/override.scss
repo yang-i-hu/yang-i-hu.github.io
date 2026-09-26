@@ -29,9 +29,9 @@
     pointer-events: none;
   }
   
-  /* Dark-mode override (Toha sets [data-dark-mode]) */
-  [data-dark-mode] .collapse-summary .summary-text.collapsed::after {
-    background: linear-gradient(transparent, var(--dark-context-bg));
+  /* Dark-mode override (Toha v4 sets data-theme="dark" on <html>); fade to the dark card background */
+  html[data-theme='dark'] .collapse-summary .summary-text.collapsed::after {
+    background: linear-gradient(transparent, #1e293b);
   }
   
   /* Button */
@@ -44,3 +44,34 @@
   }
   .toggle-summary:hover { text-decoration: underline; }
   
+/* Ragged-right text reads better than justified text (Toha justifies every <p> and card body) */
+p,
+.card .card-body {
+  text-align: start;
+  text-justify: auto;
+}
+
+/* Toha v4.4.0 only swaps logos when dark mode is chosen explicitly, not when it comes from the
+   system setting; drive the swap from the data-theme attribute instead */
+html[data-theme='dark'] .logo-holder .light-logo:not(:only-child) {
+  display: none !important;
+}
+
+html[data-theme='dark'] .logo-holder .dark-logo {
+  display: inline !important;
+}
+
+html[data-theme='light'] .logo-holder .dark-logo {
+  display: none !important;
+}
+
+/* the resume link is styled as a button; keep Toha's link underline off it */
+html .about-section a.btn:hover,
+html .about-section a.btn:focus {
+  text-decoration: none;
+}
+
+/* keep a date range on one line so it wraps as a unit */
+.experiences-section .company-heading p {
+  white-space: nowrap;
+}

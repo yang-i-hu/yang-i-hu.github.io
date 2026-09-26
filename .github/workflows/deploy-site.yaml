@@ -1,22 +1,33 @@
 name: Deploy to Github Pages
 
-# run when a commit is pushed to "source" branch
+# build on pushes, pull requests and manual runs; only main is deployed
 on:
   push:
     branches:
     - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
     # checkout to the commit that has been pushed
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v7
+      with:
+        persist-credentials: false
 
     - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2.6.0
+      uses: peaceiris/actions-hugo@v3.2.1
       with:
-        # hugo-version: 'latest'
+        # pinned: upgrade Hugo together with the Toha theme (go.mod), not separately
         hugo-version: '0.134.0'
         extended: true
 
@@ -24,21 +35,23 @@ jobs:
       run: hugo mod tidy
 
     - name: Setup Node
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v7
       with:
-        node-version: 20
+        node-version: 22
 
     - name: Install node modules
       run: |
         hugo mod npm pack
-        npm install        
+        npm install
 
+    # --cleanDestinationDir removes anything in ./public that the current build did not produce
     - name: Build
-      run: hugo --minify
+      run: hugo --minify --cleanDestinationDir
 
     # push the generated content into the `gh-pages` branch.
     - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3.9.0
+      if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+      uses: peaceiris/actions-gh-pages@v4.1.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages

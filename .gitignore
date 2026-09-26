@@ -1,2 +1,6 @@
 resources/*
 node_modules/*
+
+# build output (CI builds and publishes it; never commit)
+public/
+.hugo_build.lock

@@ -10,12 +10,8 @@ module:
   mounts:
   - source: static/files
     target: static/files
-  - source: ./node_modules/flag-icon-css/flags
-    target: static/flags
   - source: ./node_modules/@fontsource/mulish/files
     target: static/files
-  - source: ./node_modules/katex/dist/fonts
-    target: static/fonts
 
 # Manage languages
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
@@ -23,9 +19,6 @@ languages:
   en:
     languageName: English
     weight: 1
-  cn:
-    languageName: 中文
-    weight: 2
 
 # Force a locale to be use, really useful to develop the application ! Should be commented in production, the "weight" should rocks.
 # DefaultContentLanguage: bn
@@ -55,7 +48,6 @@ enableEmoji: true
 params:
   # Background image of the landing page
   background: /images/site/background.png
-  mobileBackground: /images/site/mobile_background.png
 
   # Provide logos for your site. The inverted logo will be used in the initial
   # transparent navbar and the main logo will be used in the non-transparent navbar.
@@ -151,7 +143,7 @@ params:
         #   id: <your counterdev id>
         # GoatCounter
         goatCounter:
-          code: <yang-i-hu>
+          code: yang-i-hu
         # # Matomo / Piwik
         # matomo:
         #   instance: matomo.example.com
@@ -174,7 +166,7 @@ params:
 
     # specify whether you want to show Table of Contents in reading page
     toc:
-      enable: true
+      enable: false
 
     # Show tags under the post title
     tags:
@@ -183,7 +175,7 @@ params:
 
     # Specify whether to show flag in the language selector. Default is true.
     flags:
-      enable: true
+      enable: false
       # # If you want to use different country flag for a language, specify them here.
       # flagOverwrites:
       #   - languageCode: en
@@ -191,11 +183,11 @@ params:
 
     # Enable this to use `embed-pdf` shortcode.
     embedpdf:
-      enable: true
+      enable: false
 
     # Enable this to create flowcharts using shortcodes.
     flowchart:
-      enable: true
+      enable: false
       services:
         # Uncomment for `mermaid` shortcode.
         mermaid:
@@ -204,7 +196,7 @@ params:
 
     # Enable this to create mathematic expressions using `$$` blocks
     math:
-      enable: true
+      enable: false
       services:
         # https://katex.org/docs/autorender.html#api for more configurations
         katex:
@@ -235,7 +227,7 @@ params:
     #   codeFences: false
     # ```
     syntaxHighlight:
-      enable: true
+      enable: false
       services:
         hljs:
           # see: https://highlightjs.readthedocs.io/en/latest/api.html#configure
@@ -243,7 +235,7 @@ params:
 
     # Enable to use `video-player` shortcode
     videoPlayer:
-      enable: true
+      enable: false
       services:
         # convert .js-player class into video player via https://plyr.io/
         # Can play HTML5 Video, Audio, Youtube, Vimeo.

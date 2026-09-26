@@ -49,7 +49,7 @@
           </div>
         </div>
       </a>
-      <div class="card-body text-justify pt-1 pb-1">
+      <div class="card-body pt-1 pb-1">
         <div class="collapse-summary">
           <p class="card-text summary-text collapsed">{{ .summary | markdownify }}</p>
           <button class="btn btn-link btn-sm toggle-summary" type="button" style="display: none;">
@@ -83,7 +83,7 @@
               <a
                 class="btn btn-outline-info btn-sm"
                 href="{{ .url }}"
-                target="#"
+                target="_blank" rel="noopener"
                 >{{ i18n "project_details" }}</a
               >
             </span>
