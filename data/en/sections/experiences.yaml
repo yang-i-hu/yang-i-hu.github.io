@@ -6,96 +6,79 @@ section:
   weight: 3
   showOnNavbar: true
   # Can optionally hide the title in sections
-  # hideTitle: true  
+  # hideTitle: true
 
 # Your experiences
 experiences:
 - company:
+    name: Stealth AI startup
+    location: Brooklyn, NY
+
+  positions:
+  - designation: Founding Engineer
+    start: Oct. 2025
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    responsibilities:
+    - Designed the multi-turn tool-calling orchestration that routes between deterministic workflows, semantic retrieval, and agentic reasoning based on user intent, conversation state, and confidence signals.
+    - Built production asynchronous AI APIs (Django + DRF) that turn unstructured user inputs into indexed, retrievable data through vision-language model ingestion, idempotent endpoints, and failure-aware scheduling.
+    - Led the GCP deployment architecture (structured and unstructured storage, concurrent task execution, CI/CD, environment-isolated releases) to take the product from prototype to production.
+
+- company:
     name: Abama Private Fund Investment Management Co., Ltd.
     location: Shanghai, China
     logo: /images/sections/experiences/abama.png
-    # darklogo: /images/sections/experiences/
-    # company overview
-    # overview: "The world’s leading platform for creating and operating interactive, real-time 3D (RT3D) content. "
-  
+    overview: "Quantitative investment fund."
+
   positions:
   - designation: Quantitative Research Intern
-    start: July. 2025
-    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    start: Jul. 2025
     end: Aug. 2025
-    # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Designed a parallelized data pipeline to transform raw event-level financial data into 300+ engineered featuresto feed high-frequency trading ML models, cutting data preparation from 8 h to 15 min.
-    - Delivered a live-updating factor store database powering large-scale model training and backtests; increased experiment throughput by ∼ 10× and enabled apples-to-apples model comparison during strategy reviews.
-    - Fine-tuned Transformers for trading signal prediction, improving annualized return by 3% in backtests.
-    - Built an automated feature-discovery framework that iteratively surfaces noise-robust, signal-strengthening factors, accelerating model iteration and reducing manual screening.
+    - Redesigned the research data pipeline (stage decomposition, reuse of intermediate results, column and partition pruning) that turns raw event-level market data into 300+ engineered features. After an infra colleague parallelized it, a full run went from ~8 h to ~15 min.
+    - Trained Transformer-based models for trading-signal prediction, evaluated in backtests.
+    - Built an automated feature-discovery framework that iteratively surfaces noise-robust, signal-strengthening factors, speeding up model iteration and reducing manual screening.
 
 - company:
     name: Unity
     url: "https://unity.com/"
     location: Shanghai, China
     logo: /images/sections/experiences/U_Logo_Small_Black_RGB_1C.png
-    darklogo: /images/sections/experiences/U_Logo_Small_White_RGB_1C.png
-    # company overview
-    # overview: "The world’s leading platform for creating and operating interactive, real-time 3D (RT3D) content. "
-  
+    darkLogo: /images/sections/experiences/U_Logo_Small_White_RGB_1C.png
+
   positions:
   - designation: R&D Software Engineering Intern
-    start: May. 2024
-    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    start: May 2024
     end: Aug. 2024
-    # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Scaled the RAG knowledge base for Unity’s AI assistant via community and forum ingestion and LLM-based quality filtering; expanded answer coverage for Editor/API issues by ∼ 10×, improving first-response resolution.
-    - Built MuseBench, an evaluation platform that pairs an LLM-as-a-judge with a curated benchmark of Q&A pairs, enabling consistent scoring of RAG results across different model versions and cutting evaluation time by 95%.
-    - Deployed a local-LLM pipeline to parse 100k+-line Unity Cloud Build logs and extract root-cause signals; reduced triage from hours to minutes and accelerated time-to-fix for recurring build failures.
+    - Built MuseBench, an evaluation platform that pairs an LLM-as-a-judge with a curated benchmark of Q&A pairs, giving consistent scoring of RAG results across model versions and cutting evaluation time by 95%.
+    - Scaled the RAG knowledge base for Unity's AI assistant through community and forum ingestion with LLM-based quality filtering, expanding answer coverage for Editor/API issues by ~10×.
 
 - company:
-    name: The Waves Lab at UCSB
-    url: "https://caylor.eri.ucsb.edu/"
+    name: The WAVES Lab, UC Santa Barbara
+    url: "https://www.waveslab.org/"
     location: Santa Barbara, California
     logo: /images/sections/experiences/WAVES.png
-    # Can optionally show a different logo for dark theme
-    # darklogo: /images/sections/experiences/company1.jpg
-    # company overview
-    overview: "Advisor: [Prof. Kelly Caylor](https://caylor.eri.ucsb.edu/people/caylor/) | Graduate Advsior: [Anna Boser](https://anna-boser.github.io/)"
-  
+    overview: "Advisor: [Prof. Kelly Caylor](https://www.waveslab.org/people/kelly-caylor) | Graduate Advisor: [Anna Boser](https://annaboser.com/)"
+
   positions:
-  - designation: Undergraduate Researcher
-    start: Sep. 2023
-    # don't provide end date if you are currently working there. It will be replaced by "Present"
-    end: Mar. 2024
-    # give some points about what was your responsibilities at the company.
-    responsibilities:
-    - Developed a novel [Segment-Then-Classify](https://nips.cc/virtual/2023/76884) Strategy leveraging the Segment Anything Model and Vision Transformer for instance segmentation in remote sensing, reducing manual labeling and training costs.
-    - Applied multiple time series classification models on Sentinel satellite imagery to achieve pixel-level semantic segmentation, enhancing the detection accuracy of smallholder irrigation fields.
-
-  - designation: Bren Leaders and Internship Program
+  - designation: Machine Learning Undergraduate Researcher
     start: Jun. 2023
-    end: Sep. 2023
+    end: Mar. 2024
     responsibilities:
-    - Implemented an instance segmentation model for automated mapping of  center-pivot irrigation systems in Sub-Saharan Africa for a deeper understanding of irrigation adoption and its impacts in the region.
-
+    - "First-authored [Segment-then-Classify: Few-shot instance segmentation for environmental remote sensing](https://www.climatechange.ai/papers/neurips2023/53), a NeurIPS 2023 Climate Change AI workshop paper."
+    - Proposed Segment-then-Classify, where the Segment Anything Model proposes masks zero-shot and a lightweight ViT classifier labels them, reaching peak performance with ~3× less training data than the state-of-the-art baseline on large-scale satellite imagery.
 
 - company:
-    name: Data Science & Engineering School at East China Normal University
-    location: Shanghai, China
+    name: School of Data Science & Engineering, East China Normal University
+    location: Remote
     logo: /images/sections/experiences/ECNU.png
-    # Can optionally show a different logo for dark theme
-    # darklogo: /images/sections/experiences/company2.jpg
     overview: "Advisor: [Prof. Ding-jiang Huang](https://openreview.net/profile?id=~Dingjiang_Huang1)"
 
   positions:
-    - designation: Undergraduate Research Assistant
-      start: Aug. 2022
-      end: Jun. 2023
-      responsibilities:
-      - "Co-authored the ACM MM '24 paper :'[Compacter: A Lightweight Transformer for Image Restoration](https://openreview.net/pdf?id=gvrDYlQXxw)', achieving state-of-the-art PSNR performance across different Image Restoration tasks with ~ 50% - 65% fewer parameters."
-      - Co-designed Compact Adaptive Self-Attention, enabling omnidirectional spatial–channel information flow through cross-modulation of global context to strengthen long-range dependencies while preserving local detail.
-      - Proposed a Dual Selective Gated Module that dynamically injects global context into each pixel for contextadaptive aggregation, amplifying informative features and suppressing noise.
-      - Built the PyTorch training/benchmarking pipeline and ran ablation experiments, enabling reproducible results and efficient comparison to baselines.
-    - designation: Summer Intern
-      start: Jun. 2022
-      end: Aug. 2022
-      responsibilities:
-      - Conducted literature reviews on Image Super-Resolution deep learning models.
+  - designation: Computer Vision Lab Research Assistant
+    start: Jun. 2022
+    end: May 2023
+    responsibilities:
+    - "Co-authored the ACM MM 2024 paper [Compacter: A Lightweight Transformer for Image Restoration](https://doi.org/10.1145/3664647.3680811), reaching state-of-the-art PSNR across image restoration tasks with ~50–65% fewer parameters."
+    - Co-designed Compact Adaptive Self-Attention, which cross-modulates global context to strengthen long-range dependencies while preserving local detail.
+    - Proposed a Dual Selective Gated Module that injects global context into each pixel for context-adaptive aggregation, amplifying informative features and suppressing noise.

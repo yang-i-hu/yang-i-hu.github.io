@@ -12,7 +12,7 @@
         <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
   {{ end }}
 
-  <div class="container timeline text-justify">
+  <div class="container timeline">
    {{ $totalExperiences:= len .experiences }}
    {{ range $index,$experience:= .experiences }}
      {{ if eq (mod $index 2) 0 }}

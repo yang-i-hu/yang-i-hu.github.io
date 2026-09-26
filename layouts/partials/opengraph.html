@@ -4,9 +4,20 @@
 {{ $image       :=  (index site.Data site.Language.Lang).site.openGraph.image | default  (index site.Data site.Language.Lang).author.image }}
 {{ $url         :=  (index site.Data site.Language.Lang).site.openGraph.url | default site.BaseURL }}
 
+{{/* images live under assets/, so publish them through the resource pipeline to get an absolute URL */}}
+{{ $imageURL := $image | absURL }}
+{{ with resources.Get $image }}
+  {{ $imageURL = .Permalink }}
+{{ end }}
+
 <!-- ============ open graph tags ========== -->
 <meta property="og:title" content="{{ $title }}"/>
 <meta property="og:type" content="{{ $type }}"/>
 <meta property="og:description" content="{{ $description }}"/>
-<meta property="og:image" content="{{ $image | relURL }}">
+<meta property="og:image" content="{{ $imageURL }}">
+<meta property="og:image:alt" content="{{ $title }}">
 <meta property="og:url" content="{{ $url }}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description }}">
+<meta name="twitter:image" content="{{ $imageURL }}">

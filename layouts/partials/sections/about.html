@@ -22,7 +22,7 @@
         {{ end }}
       </h5>
       {{ end }}
-      <p class="p-1 text-justify">
+      <p class="p-1">
         {{ .summary | markdownify }}
       </p>
       <div class="text-container ms-auto">
@@ -41,13 +41,13 @@
         </ul>
       </div>
       {{ if .resume }}
-      <a href="{{ .resume | relURL }}" title="{{ i18n "resume"}}" target="#"
-        ><button class="btn btn-dark">{{ i18n "resume"}}</button></a
+      <a href="{{ .resume | relURL }}" title="{{ i18n "resume"}}" target="_blank" rel="noopener"
+        class="btn btn-dark">{{ i18n "resume"}}</a
       >
       {{ end }}
       {{ range .resourceLinks }}
-      <a href="{{ .url | relURL }}" title="{{ .title }}" target="#"
-        ><button class="btn btn-dark">{{ .title }}</button></a
+      <a href="{{ .url | relURL }}" title="{{ .title }}" target="_blank" rel="noopener"
+        class="btn btn-dark">{{ .title }}</a
       >
       {{ end }}
     </div>

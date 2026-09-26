@@ -18,18 +18,36 @@ buttons:
   filter: "Computer Vision"
 - name: Data Science
   filter: "Data Science"
+- name: Software Engineering
+  filter: "Software Engineering"
 - name: Math
   filter: "Math"
 
 # your projects
 projects:
 
+- name: polytape
+  timeline: "Jun. 2026 - Jul. 2026"
+  repo: https://github.com/yang-i-hu/polytape
+  summary: "A read-only Python recorder for Polymarket's public order-book websocket that writes timestamped JSONL and resyncs from a fresh snapshot after each disconnect. It captured 185M records across 76 matches of the 2026 World Cup, with one 22-hour outage."
+  tags: ["Software Engineering", "Data Engineering", "Python", "WebSockets", "Prediction Markets", "Google Cloud"]
+
+- name: OLÉ
+  timeline: "Jun. 2026 - Jul. 2026"
+  summary: "A World Cup 2026 watch-party platform for US fans, built solo with AI coding agents and archived after the final. Its Monte Carlo engine simulated the 48-team tournament 50,000 times per run, calibrated to Polymarket's winner market."
+  tags: ["Software Engineering", "Data Science", "Monte Carlo Simulation", "Python", "FastAPI", "React"]
+
+- name: Genesis
+  timeline: "Sep. 2025 - Dec. 2025"
+  repo: https://github.com/yang-i-hu/Genesis
+  summary: "A Solidity incentive protocol for launching new tokens. Publishers escrow rewards in per-campaign vaults, and wallets claim them for holding a minimum balance or calling a target contract. Includes a Next.js demo app on a local Anvil chain."
+  tags: ["Software Engineering", "Solidity", "Smart Contracts", "Mechanism Design", "Foundry", "Next.js"]
+
 - name: VocationalNYC
-  url: "http://vocationalnyc-env.eba-uurzafst.us-east-1.elasticbeanstalk.com/"
   repo: https://github.com/gcivil-nyu-org/team1-wed-spring25
   timeline: "Jan. 2025 - May 2025"
   summary: "A full-stack platform that helps connect NYC residents with vocational programmes: Django-powered backend (PostgreSQL, WebSockets), Google Maps API for geo-search, AWS Elastic Beanstalk + Nginx deployment, and a Travis-driven CI/CD pipeline."
-  tags: ["Web Development", "Django", "PostgreSQL", "AWS", "DevOps", "JavaScript", "Python"]
+  tags: ["Software Engineering", "Web Development", "Django", "PostgreSQL", "AWS", "JavaScript", "Python"]
 
 - name: Information Retrieval System & Retrieval-Augmented Generation
   timeline: "Sep. 2024 – Dec. 2024"
@@ -40,7 +58,6 @@ projects:
   # logo: /images/sections/projects/STC.png
   # role: First author
   timeline: "Nov. 2023 - Mar. 2024"
-  repo: https://github.com/anna-boser/smallholder_irrigation_detection
   summary: The project performs semantic segmentation on delicate, small fields using their satellite imagery. Various pixel-level time series classification models are implemented utilizing time series data from Sentinel satellites. Experiments are conducted to explore the transferability and adaptability of the models' trained weights across different locations and time periods.
   tags: ["Deep Learning", "Machine Learning", "Time Series", "Computer Vision", "Image Segmentation", "Remote Sensing", "TensorFlow","Python"]
 
@@ -57,8 +74,7 @@ projects:
   logo: /images/sections/projects/Candy.png
   role: Time Series Course Project
   timeline: "Sep. 2023 - Nov. 2023"
-  repo: https://github.com/yang-i-hu/TS_US_Candy/
-  summary: The project focuses on forecasting the candy production in the U.S. based on the time series data over the past 45 years. Techniques such as Box-Cox transformation and differencing are applied to achieve stationarity, and the optimal SARIMA model is identified using ACF/PACF analysis and Maximum Likelihood Estimation. The model are further validated through comprehensive diagnostic tests and spectral analysis.
+  summary: The project focuses on forecasting the candy production in the U.S. based on the time series data over the past 45 years. Techniques such as Box-Cox transformation and differencing are applied to achieve stationarity, and the optimal SARIMA model is identified using ACF/PACF analysis and Maximum Likelihood Estimation. The model is further validated through comprehensive diagnostic tests and spectral analysis.
   tags: [ "Data Science", "Time Series", "Statistical Modeling", "R"]
   
 - name: Efficient Visual Attention Design for Image Super-Resolution
@@ -75,7 +91,6 @@ projects:
   tags: [ "Deep learning","Machine Learning", "Computer Vision", "Python"]
 
 - name: Soccer player transfer market value prediction
-  logo: /images/sections/projects/evasr.png
   role: Machine Learning Course Project
   timeline: "Sep. 2022 - Jan. 2023"
   repo: https://github.com/yang-i-hu/TMP

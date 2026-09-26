@@ -45,7 +45,7 @@ degrees:
 
   extracurricularActivities: #(optional)
 
-  custonSections: #(optional)
+  customSections: #(optional)
 
 
 - name: B.S. in Mathematics / Statistics and Data Science
@@ -94,7 +94,7 @@ degrees:
 
   publications: #(optional)
     - title: "Compacter: A Lightweight Transformer for Image Restoration"
-      url: "https://openreview.net/pdf?id=gvrDYlQXxw"
+      url: "https://doi.org/10.1145/3664647.3680811"
     - title: "Segment-then-Classify: Few-shot instance segmentation for environmental remote sensing"
       url: "https://www.climatechange.ai/papers/neurips2023/53"
 
@@ -104,7 +104,7 @@ degrees:
   - Snow Club
   - Intramural soccer player
 
-  custonSections: #(optional)
+  customSections: #(optional)
     - name: Fellowship
       content: Schmidt Family Foundation Research Mentorship Award
     # - name: Supervisor

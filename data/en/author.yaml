@@ -7,14 +7,12 @@ image: "images/author/transparent.png"
 # give your some contact information. they will be used in the footer
 contactInfo:
   email: "yang.h@nyu.edu"
-  phone: "+1 805-637-9661"
   github: yang-i-hu
-  linkedin: yang-hu-564998210
+  linkedin: yang-hu-sh
 
 # some summary about what you do
 summary:
-- Mathematics
-- Computer Science
-- Data Science
 - Machine Learning
-- Software Engineering
+- Data Science
+- Quantitative Research
+- AI Engineer

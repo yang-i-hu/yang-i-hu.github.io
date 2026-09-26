@@ -8,7 +8,7 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Graduate student at New York University
+designation: Founding Engineer at a stealth AI startup
 # your company information
 # company:
 #   name: UC Santa Barbara
@@ -19,14 +19,17 @@ designation: Graduate student at New York University
 resume: "files/Yang_Hu_Resume.pdf"
 
 # a summary about you
-summary: 'I am a **MS Computer Science** student at the Tandon School of Engineering at **New York University**.
-I hold a **BS** from **UCSB** with a double major in **Mathematics** and **Statistics & Data Science**. 
+summary: "Currently a founding engineer at an AI startup in Brooklyn. I designed the agent orchestration,
+which routes each request to a deterministic workflow, semantic retrieval, or full agent reasoning
+based on intent, conversation state, and confidence.
 <br/><br/>
-With a foundation in mathematical and statistical modeling, my research interests lie in leveraging machine learning and deep learning models for innovative solutions. 
-I am experienced in modeling and extracting meaningful insights from complex, large-scale datasets across a diverse range of domains, including business, finance, sports, environmental science, and game industry, among others.
+Before this, I was a quant research intern at a quant fund, training high-frequency deep learning models.
+At Unity, I helped ship Muse Chat, Unity's first AI agent.
 <br/><br/>
-I am actively looking for 2026 New Graduate opportunities in Machine Learning, Software Engineering, or Quantitative Research roles!
-'
+As an undergrad, I did computer vision research on instance segmentation and super-resolution.
+<br/><br/>
+M.S. in Computer Science, NYU (2026). B.S. in Mathematics and Statistics & Data Science, UC Santa Barbara.
+"
 
 # summary: 'I am a recent graduate from **UCSB** with a double major in **Mathematics** and **Statistics & Data Science**. With a foundation in mathematical and statistical modeling, my research interests lie in leveraging machine learning and deep learning models for innovative solutions. I am experienced in modeling and extracting meaningful insights from complex, large-scale datasets across a diverse range of domains, including business, finance, sports, and satellite imagery, among others.
 # <br/><br/>
